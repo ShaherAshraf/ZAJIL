@@ -1,0 +1,16 @@
+.settingsPage {
+  .pageContent {
+    align-items: center;
+
+    .pageContent__container {
+       width: 100%;
+     /* max-width: 400px; */
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    .form {
+      height: auto;
+    }
+  }
+}

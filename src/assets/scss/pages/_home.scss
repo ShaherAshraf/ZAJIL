@@ -1,0 +1,52 @@
+.homePage {
+  .logo {
+    margin-bottom: 3rem;
+  }
+
+  .text {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .text__title {
+    font-size: 4rem;
+    font-family: var(--titleFont);
+    margin-bottom: 2rem;
+  }
+
+  .text__paragraph {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    max-width: 378px;
+    margin: 0 auto;
+  }
+
+  .content {
+    @media (min-width: 768px) {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    @media (min-width: 992px) {
+      width: 40%;
+    }
+    @media (min-width: 1200px) {
+      width: 30%;
+    }
+  }
+
+  .content--right {
+    max-width: 250px;
+    margin: 0 auto;
+    @media (min-width: 992px) {
+      margin: 0;
+    }
+  }
+
+  .or {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}

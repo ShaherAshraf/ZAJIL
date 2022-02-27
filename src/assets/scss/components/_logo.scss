@@ -1,0 +1,19 @@
+@import '../abstracts/animations';
+
+svg {
+  margin: 0 auto;
+  #leg {
+    @extend %legAnimation;
+  }
+
+  #eye {
+    @extend %eyeAnimation;
+  }
+}
+
+.logo__title {
+  font-size: 6rem;
+  font-family: var(--logoFont);
+  text-align: center;
+  color: var(--mainYellow);
+}

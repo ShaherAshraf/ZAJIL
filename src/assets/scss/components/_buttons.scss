@@ -1,0 +1,74 @@
+.btn,
+.btn--large {
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.btn {
+  width: 80px;
+  padding: 0.7rem;
+}
+
+.btn--large {
+  width: 100%;
+  padding: 1rem;
+}
+
+.btn--red {
+  color: var(--mainYellow);
+  background-color: #51121f;
+  background-image: linear-gradient(to left, #51121f 0%, #a2243e 100%);
+  &:hover {
+    background-image: linear-gradient(to right, #51121f 0%, #a2243e 100%);
+    box-shadow: var(--shadow-xl);
+  }
+}
+
+.btn--yellow {
+  color: white;
+  background-color: #d1953b;
+  background-image: linear-gradient(to left, #d1953b 0%, #daaa62 100%);
+  &:hover {
+    background-image: linear-gradient(to right, #d1953b 0%, #daaa62 100%);
+    box-shadow: var(--shadow-xl);
+  }
+}
+
+.hint {
+  width: 97%;
+  margin: 1rem 0 4rem;
+  font-size: 1rem;
+  .hint__colored {
+    color: var(--mainYellow);
+    cursor: pointer;
+  }
+}
+
+.btn__question {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.or {
+  /* display: none; */
+  /* @media (min-width: 768px) { */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  &::before,
+  &::after {
+    content: '';
+    padding: 0.5px 50px;
+    margin: 0 1rem;
+    background: white;
+  }
+  /* } */
+}
+
+.signup--google {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}

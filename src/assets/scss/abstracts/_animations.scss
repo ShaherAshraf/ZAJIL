@@ -1,0 +1,32 @@
+%eyeAnimation {
+  animation: moveEyes 3s ease-in-out infinite alternate both;
+}
+
+%legAnimation {
+  animation: moveLegs 4s ease-out infinite alternate both;
+}
+
+@keyframes moveEyes {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform-origin: center;
+    transform: rotateZ(-3deg) scale(1.05) rotateY(-20deg);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveLegs {
+  0% {
+    transform: translateX(0);
+  }
+
+  75% {
+    transform: translateX(10px) rotateZ(-3deg);
+  }
+}
